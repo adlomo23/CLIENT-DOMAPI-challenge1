@@ -2,10 +2,19 @@
 
 1. Answer the following questions:
 
-   - How would you select from JavaScript an element `p` that has the class `text` and also the class `important`?
-   - How would you select from JavaScript a `button` element with class `button` and that is disabled?
-   - How would you select from JavaScript all the `li` elements that are direct children of an `ul` element with class `list`?
-   - How would you select from JavaScript all the `input` elements that are descendants of a `form` element with class `form-new-item`, and that have a `type` attribute with a value `text`?
+   - How would you select from JavaScript an element `p` that has the class `text` and also the class `important`?<br>
+      const p = document.querySelector("p.text");
+
+   - How would you select from JavaScript a `button` element with class `button` and that is disabled?<br>
+      const butt = document.querySelector("button");
+
+   - How would you select from JavaScript all the `li` elements that are direct children of an `ul` element with class `list`?<br>
+      const list = document.querySelector("ul.list");
+      const listItem = list.appendChildAll("li");
+
+   - How would you select from JavaScript all the `input` elements that are descendants of a `form` element with class `form-new-item`, and that have a `type` attribute with a value `text`?<br>
+      const form = document.querySelector("form.form-new-item");
+      const formItem = document.appendChild(form);
 
 2. From the following HTML structure, create a script that selects the header "The MEAN stack". Next, change the text to "The MERN stack" and remove the "subtitle" class.
 
