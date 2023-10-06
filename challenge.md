@@ -30,6 +30,14 @@
   </section>
 </main>
 ```
+```javaScript
+const text = document.querySelector(h2.subtitle);
+
+const newText = docuemnt.createTextNote("The MERN stack");
+
+document. subtitleHeader.classList.remove('subtitle');
+
+```
 
 3. Here you have an HTML without data:
 
@@ -44,3 +52,16 @@
 Create a script where you declare a variable with a student's data
 (name, age and photo URL). Next, get the elements from the HTML
 and fill them in with the student's information.
+
+```javaScript
+
+const studentData = {
+    name: 'Adrià López',
+    age: 19,
+    photo: 'https://www.google.com/search?client=opera-gx&hs=2Q&sca_esv=571311955&q=foto+estudiante&tbm=isch&source=lnms&sa=X&ved=2ahUKEwic0L_by-GBAxV3UaQEHd7DBjMQ0pQJegQIFxAB&biw=1661&bih=901&dpr=1.13#imgrc=Hng-YFAmErhjhM'
+  };
+
+  const nameItem = document.querySelector('.student-name');
+  const ageItem = document.querySelector('.student-age');
+  const photoItem = document.querySelector('.student-photo');
+```
